@@ -1,1 +1,201 @@
+Jab API response dene me zyada time leti hai, use high latency bolte hain.
 
+Example:
+
+Normal API: 200–300 ms ✅
+
+Slow API: 5–10 seconds ❌
+
+User wait karta rehta hai… aur app lag karta hai 😤
+
+
+🔍 High Latency API ko debug kaise karte hain? (Step-by-step)
+
+Socho API ek road trip hai — hume dekhna hai traffic kaha lag raha hai 🚦
+
+1️⃣ Pehle measure karo (guess mat karo)
+
+Sabse pehle check karo:
+
+API ka response time kitna hai?
+
+Har request slow hai ya kabhi-kabhi?
+
+👉 Postman / curl se easily pata chal jata hai.
+
+2️⃣ API ke parts me tod do
+
+Ek API normally ye steps follow karti hai:
+
+Request →
+Auth →
+Logic →
+Database →
+External API →
+Response
+
+
+Har step ka time check karo.
+
+💡 Example:
+
+Auth: 20ms ✅
+
+Logic: 30ms ✅
+
+Database: 3 seconds ❌
+
+➡️ Problem mil gayi — DB slow hai 💥
+
+3️⃣ Database check karo (MOST COMMON reason)
+
+Zyada tar slow APIs ka reason hota hai DB.
+
+Check karo:
+
+Slow SQL queries
+
+Index missing hai ya nahi
+
+N+1 queries
+
+Bahut zyada data fetch ho raha hai
+
+👉 Rule yaad rakho:
+
+DB slow = API slow
+
+4️⃣ External APIs dekh lo
+
+Agar tumhari API kisi aur service ko call karti hai:
+
+Payment gateway
+
+Email / SMS service
+
+Third-party API
+
+To check karo:
+
+Wo service slow to nahi?
+
+Timeout ya retries to nahi lag rahe?
+
+💣 Ye hidden latency killers hote hain.
+
+5️⃣ Server & infrastructure check karo
+
+Ye bhi common issue hota hai:
+
+Check karo:
+
+CPU usage (90–100% ❌)
+
+RAM full hai?
+
+Workers / threads kam hain?
+
+Server location user se door hai?
+
+👉 CPU high = API crawl karegi 🐌
+
+6️⃣ Logs & tracing add karo
+
+Logs lagao taaki pata chale time kaha ja raha hai.
+
+Example log:
+
+10:01:00 → Request aayi
+10:01:01 → DB query start
+10:01:04 → DB query end
+10:01:05 → Response gaya
+
+
+Ab clearly dikhega delay kaha hai 👀
+
+7️⃣ Fix ke baad dubara test karo
+
+Optimization ke baad test karo
+
+Pehle vs baad ka time compare karo
+
+Ensure koi bug introduce na ho
+
+🧰 Tools jo high latency debug karne me kaam aate hain
+🔹 API testing
+
+Postman
+
+curl
+
+Insomnia
+
+🔹 Logs & monitoring
+
+Winston / Pino (Node.js)
+
+Loguru (Python)
+
+ELK Stack
+
+Grafana + Loki
+
+🔹 APM (Production me best)
+
+🔥 Ye tools directly bata dete hain slow kaha hai:
+
+New Relic
+
+Datadog
+
+AppDynamics
+
+Sentry Performance
+
+🔹 Database tools
+
+EXPLAIN / EXPLAIN ANALYZE
+
+pgAdmin
+
+MongoDB Atlas Performance Advisor
+
+Slow query logs
+
+🔹 Load testing
+
+k6
+
+JMeter
+
+Locust
+
+Artillery
+
+👉 Pata chalta hai load me API ka kya haal hota hai.
+
+🔹 Server & infra
+
+htop / top
+
+Docker stats
+
+AWS CloudWatch
+
+PM2 Monitor
+
+⚡ Yaad rakhne wale golden rules
+
+🐢 DB slow → API slow
+
+🔁 Zyada calls → zyada latency
+
+📦 Bada response → slow
+
+🚫 Cache nahi → repeated kaam
+
+🌍 Server door → network delay
+
+🎯 Interview ke liye ek line
+
+“Main pehle API ka response time measure karta hoon, phir logs aur APM tools se identify karta hoon ki delay DB, external service ya server side se aa raha hai.”
