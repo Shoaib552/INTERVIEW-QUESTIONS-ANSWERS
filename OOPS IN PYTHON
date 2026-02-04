@@ -1,0 +1,30 @@
+What is OOP?
+
+OOP (Object-Oriented Programming) is a way of writing code where we think in terms of real-world objects.
+
+For example:
+
+             Car 🚗
+
+            Student 👨‍🎓
+
+            Phone 📱
+
+In Python, we create these using classes and objects.
+
+
+                                                                                                #Main concepts of OOP
+
+
+(1) Class
+
+A class is like a blueprint or template.
+
+Example:
+
+House design → Class                            Ghar ka naksha → Class
+
+Real house → Object                             Ghar khud → Object
+
+(2) Object 
+
