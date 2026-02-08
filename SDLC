@@ -1,0 +1,25 @@
+SDLC stands for Software Development Life Cycle.
+
+SDLC is a step-by-step process used to build software from start to end.
+
+The first step is Requirement Gathering.
+In this step, we understand what the client or user needs and what the software should do.
+
+The second step is Design.
+In this step, we plan how the software will look and how it will work, including UI, database, and system structure.
+
+The third step is Development.
+In this step, developers write the actual code for the software.
+
+The fourth step is Testing.
+In this step, the software is tested to find and fix bugs and ensure it works correctly.
+
+The fifth step is Deployment.
+In this step, the software is released to users or moved to the production environment.
+
+The sixth step is Maintenance.
+In this step, bugs are fixed, updates are made, and new features are added after release.
+
+SDLC is important because it helps deliver quality software, reduces errors, and ensures smooth development.
+
+In simple words, SDLC helps teams build software in an organized and efficient way.
