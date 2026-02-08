@@ -14,7 +14,7 @@ Page by page
 
 Puri book ek saath nahi
 
-👉 Yehi iterator ka concept hai
+ Yehi iterator ka concept hai
 
 Python example
 nums = [1, 2, 3]
@@ -32,7 +32,7 @@ Large data handle karta hai
 
 Lazy loading
 
-🔹 Translator kya hota hai?
+ Translator kya hota hai?
 
 Translator ka kaam hota hai ek language ko dusri language me convert karna
 
@@ -42,24 +42,24 @@ Translator high-level language ko low-level (machine language) me convert karta 
 
 Real-life example 🌍
 
-🗣️ English → Hindi translator
+ English → Hindi translator
 Computer version:
 
 Python code → Machine code (0s & 1s)
 
 Types of Translator
 
-1️⃣ Compiler – poora code ek saath convert
-2️⃣ Interpreter – line by line convert
-3️⃣ Assembler – assembly → machine code
+1️ Compiler – poora code ek saath convert
+2️ Interpreter – line by line convert
+3️ Assembler – assembly → machine code
 
-🔥 Iterator vs Translator (Simple difference)
+ Iterator vs Translator (Simple difference)
 Iterator	Translator
 Data access karta hai	Language convert karta hai
 One by one value deta hai	High → Low level
 Memory efficient	Computer ko code samjhata hai
 Loop ke saath use hota hai	Compile / Run ke time
-🎯 Interview one-liners
+ Interview one-liners
 
 Iterator:
 “Iterator allows accessing elements one at a time.”
@@ -67,7 +67,7 @@ Iterator:
 Translator:
 “Translator converts high-level language into machine language.”
 
-🧠 Easy memory trick
+ Easy memory trick
 
 Iterator = Reader 📖
 
