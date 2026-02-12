@@ -1,0 +1,95 @@
+Payment Gateway 
+
+What is a Payment Gateway?
+
+A payment gateway is an online service that helps a website or app accept payments from customers.
+
+It works as a bridge between:
+
+Customer
+
+Website
+
+Bank
+
+Examples: Razorpay, Stripe, PayPal, Paytm.
+
+What Does a Payment Gateway Do?
+
+Collects payment details from the customer
+
+Sends details securely to the bank
+
+Checks if payment is approved or rejected
+
+Sends the result back to the website
+
+How Payment Gateway Works (Step-by-Step)
+
+Step 1: Customer selects product
+The customer adds a product to the cart.
+
+Step 2: Customer clicks Checkout
+The customer clicks on "Pay Now".
+
+Step 3: Backend creates order
+The website backend creates an order using the payment gateway API.
+
+Step 4: Payment page opens
+A secure payment page or popup opens.
+
+Step 5: Customer enters payment details
+The customer enters UPI, card, or net banking details.
+
+Step 6: Bank verification
+The payment gateway sends the request to the bank.
+The bank checks if:
+
+Money is available
+
+Details are correct
+
+Step 7: Bank response
+The bank approves or rejects the payment.
+
+Step 8: Result sent to website
+The payment gateway sends success or failure response to the website.
+
+Step 9: Order status updated
+If payment is successful, the order is marked as “Paid” in the database.
+If failed, it is marked as “Failed”.
+
+Important Technical Points
+
+API keys are used to connect your app with the payment gateway.
+
+The order should always be created from the backend.
+
+Payment must be verified in the backend.
+
+Secret keys should never be exposed in frontend.
+
+Webhooks are used for extra security and confirmation.
+
+Why Payment Gateway is Important
+
+It makes payments secure.
+
+It supports multiple payment methods.
+
+It protects against fraud.
+
+It transfers money to the company’s bank account.
+
+Interview Definition (Short)
+
+A payment gateway is a secure service that processes online payments between customers and banks.
+
+If you want, I can also give you developer-level notes for e-commerce integration.
+
+Want to keep using GPT-5? Try Plus for free
+You need GPT-5 to continue this chat because there's an attachment. Your limit resets after 4:14 PM.
+New chat
+Try Plus free
+
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
