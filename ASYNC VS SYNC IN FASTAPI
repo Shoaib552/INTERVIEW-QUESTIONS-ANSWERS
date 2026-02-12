@@ -1,0 +1,6 @@
+Sync vs Async?
+
+Sync → Ek request complete hone tak dusri wait karegi
+Async → Multiple requests parallel handle hoti hain
+
+FastAPI async support karta hai.
