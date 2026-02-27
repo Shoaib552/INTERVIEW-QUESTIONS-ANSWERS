@@ -1,0 +1,90 @@
+✅ Simple English Explanation
+
+JWT (JSON Web Token) is a secure way to transmit information between client and server in the form of a token.
+
+It is mainly used for authentication and authorization.
+
+When a user logs in:
+
+The server verifies username and password.
+
+If correct, the server generates a JWT token.
+
+That token is sent back to the client.
+
+The client stores it (usually in localStorage or cookies).
+
+For every protected request, the client sends that token in the header.
+
+The server verifies the token and allows access.
+
+So instead of checking username/password every time, the server just checks the token.
+
+👉 Short interview line:
+"JWT is a stateless authentication mechanism where the server generates a signed token after login, and the client uses that token to access protected APIs."
+
+
+
+✅ Simple Hinglish Explanation
+
+JWT ek secure token system hai jo login ke baad user ko diya jata hai.
+
+Step-by-step samjho:
+
+User login karta hai email/password se.
+
+Server check karta hai credentials sahi hai ya nahi.
+
+Agar sahi hai, toh server ek JWT token generate karta hai.
+
+Ye token client ko milta hai.
+
+Jab bhi user koi protected API hit karta hai, toh wo token header me bhejta hai.
+
+Server token verify karta hai — agar valid hai toh access milta hai.
+
+Iska main benefit:
+Server ko har baar database me password check nahi karna padta.
+Token verify karke hi pata chal jata hai user authorized hai ya nahi.
+
+👉 Interview me bol sakte ho:
+"JWT is used for secure and stateless authentication. After successful login, the server generates a signed token which is sent with every request to access protected resources."
+
+
+JWT Structure (Thoda Technical)
+
+JWT 3 parts me hota hai:
+
+Header
+
+Payload
+
+Signature
+
+Format hota hai:
+xxxxx.yyyyy.zzzzz
+
+Header → Algorithm batata hai (like HS256)
+
+Payload → User data (like user_id, role)
+
+Signature → Security ke liye hoti hai (tampering prevent karta hai)
+
+🔥 Why JWT is Preferred?
+
+Stateless (server session store nahi karta)
+
+Scalable for microservices
+
+Secure (digitally signed)
+
+Fast verification
+
+🎯 Real Example (E-commerce)
+
+Login → JWT mil gaya
+User order place kare → token verify
+Admin panel access → token me role check
+
+Agar tum chaho toh main tumhe
+👉 "JWT vs Session Authentication difference" bhi simple tarike se samjha deta hoon — ye bhi frequently interview me puchte hain 🚀
