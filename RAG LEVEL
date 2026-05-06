@@ -1,0 +1,111 @@
+1. Python (Core + Backend)
+What they’ll test: depth, not syntax
+Typical Questions:
+Explain GIL in Python. When does it matter?
+Difference between threading vs multiprocessing vs async (asyncio)?
+How do you optimize a slow API in Python?
+What are decorators? Use case in real projects?
+How does memory management / garbage collection work?
+What interviewer expects:
+Clear understanding of concurrency trade-offs
+Practical answers (e.g., “used async for IO-bound APIs”)
+Not textbook definitions
+🔹 2. JavaScript / TypeScript (Moderate Depth)
+Typical Questions:
+Difference between TypeScript vs JavaScript
+Explain event loop, promises, async/await
+What is closure?
+How do you handle API errors in frontend/backend integration?
+Expected:
+Basic working knowledge (not frontend expert level)
+Ability to integrate with backend APIs
+🔹 3. API & Backend Architecture (VERY IMPORTANT)
+This is where most candidates fail.
+Questions:
+Design a scalable REST API
+What is idempotency?
+Difference between REST vs JSON-RPC
+How do you handle rate limiting & retries?
+How do you secure APIs?
+Must include in answers:
+Authentication (OAuth 2.1, JWT)
+Logging + monitoring
+Caching (Redis)
+API versioning
+🔹 4. Microservices & System Design
+Questions:
+Design a microservice for AI query processing
+How do services communicate? (REST, queues, events)
+How do you ensure fault tolerance?
+What is circuit breaker pattern?
+Expected:
+Understanding of:
+Service separation
+Load balancing
+Message queues (Kafka/RabbitMQ basics)
+🔹 5. LLM / AI / RAG (CRITICAL SECTION)
+This is the main differentiator.
+Questions:
+What is an LLM? How does it work?
+What is RAG (Retrieval-Augmented Generation)?
+How do you reduce hallucination?
+What are embeddings?
+How would you design a chatbot using LLM + database?
+What is agentic AI?
+Strong Answer Should Include:
+LLM = transformer-based model
+RAG = retrieval + generation pipeline
+Vector DB (FAISS, Pinecone, etc.)
+Prompt engineering basics
+Context injection
+🔹 6. MCP Servers / AI Integration (Advanced but expected)
+Since JD mentions this explicitly.
+Questions:
+What is MCP (Model Context Protocol)? (if known)
+How do you expose tools to AI agents?
+How do you ensure secure tool execution?
+Expected:
+Even if MCP unknown → candidate should relate to:
+API-based tool calling
+Function calling (OpenAI-style)
+Secure execution sandboxing
+🔹 7. Authentication & Security
+Questions:
+Explain OAuth 2.0 / 2.1 flow
+What is JWT?
+How do you secure AI APIs?
+Expected:
+Token-based auth
+Role-based access control
+API gateway usage
+🔹 8. Git, Testing & Debugging
+Questions:
+Git workflow (branching strategy)
+Difference between unit vs integration testing
+How do you debug a production issue?
+Expected:
+Practical answers (logs, tracing, rollback)
+🔹 9. Scenario-Based Questions (VERY COMMON)
+These decide selection.
+Examples:
+“User query is slow in AI system—how will you debug?”
+“LLM giving wrong answers—what will you do?”
+“Design AI agent that fetches data from multiple APIs”
+Strong approach:
+Break problem → identify bottleneck → propose solution
+🔹 10. Coding Round (Python likely)
+Examples:
+API-based coding problem
+String/data processing
+Basic DSA (medium level)
+🔥 What Gets Candidates SELECTED
+Tell your candidates to focus on:
+✔ Real project explanation (very important)
+✔ Clear understanding of RAG + APIs
+✔ Ability to explain architecture simply
+✔ Confidence in Python + backend design
+❌ Common Rejection Reasons
+Only theoretical AI knowledge (no implementation)
+Weak backend fundamentals
+No clarity on RAG / LLM flow
+Poor communication
